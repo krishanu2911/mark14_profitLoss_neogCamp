@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+body{
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+}
+.main-div{
+    text-align: center;
+}
+h1{
+    margin: 0px;
+}
+.header{
+   background-color: aqua;
+   padding: 2rem;
+}
+#submit-btn{
+
+    margin: 2rem 2rem 4rem 2rem;
+    padding: 1rem 2rem;
+    border: none;
+    background-color: aquamarine;
+    border-radius: 1.2rem;
+}
