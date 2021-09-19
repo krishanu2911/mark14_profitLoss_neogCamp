@@ -5,6 +5,4 @@ This is a web app that calculates the profit/loss and profit/loss percentage bas
 3. After that it also calculate the profit/loss percentage.
 4. And at the end the result is diplayed to the user.
 
-here is the link of the app 👇
-
-[ Live app link ] (https://mystock-krishanu.netlify.app/)
+here is the link of the app 👉 https://mystock-krishanu.netlify.app/
