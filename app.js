@@ -30,7 +30,7 @@ function calculateProfitAndLoss(intial, quantity, current){
     
         }
     }else{
-        outputEl.innerText = "please enter positive and value input";
+        outputEl.innerText = "please enter positive and valid input";
     }
     
 }
