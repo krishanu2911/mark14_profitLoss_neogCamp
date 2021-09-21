@@ -10,22 +10,27 @@ function clickHandler (){
 }
 
 function calculateProfitAndLoss(intial, quantity, current){
-    if(intial >current){
-        var loss = (intial - current)* quantity;
-        var lossPercentage = (loss /intial) *100;
-        outputEl.innerText = `Hey the loss is ${loss} and the precent is ${lossPercentage}% 📉📉📉`;
-        console.log(`Hey the loss is ${loss} and the precent is ${lossPercentage}`);
-
-    }else if(current> intial){
-        var profit = (current - intial) * quantity;
-        var profitPercentage = (profit /intial )* 100;
-        outputEl.innerText = `Hey u have made profit of ${profit} and the precentage is ${profitPercentage}% 📈📈📈`;
-        console.log(`hey u have made profit of ${profit} and the precentage is ${profitPercentage}%`);
-
-        
+    if(intial>0 & quantity > 0 & current > 0){
+        if(intial >current){
+            var loss = (intial - current)* quantity;
+            var lossPercentage = (loss /intial) *100;
+            outputEl.innerText = `Hey the loss is ${loss} and the precent is ${lossPercentage}% 📉📉📉`;
+            console.log(`Hey the loss is ${loss} and the precent is ${lossPercentage}`);
+    
+        }else if(current> intial){
+            var profit = (current - intial) * quantity;
+            var profitPercentage = (profit /intial )* 100;
+            outputEl.innerText = `Hey u have made profit of ${profit} and the precentage is ${profitPercentage}% 📈📈📈`;
+            console.log(`hey u have made profit of ${profit} and the precentage is ${profitPercentage}%`);
+    
+            
+        }else{
+            outputEl.innerText = "no pain no gain and on gain on pain 😂";
+            console.log("no pain no gain and on gain on pain");
+    
+        }
     }else{
-        outputEl.innerText = "no pain no gain and on gain on pain 😂";
-        console.log("no pain no gain and on gain on pain");
-
+        outputEl.innerText = "please enter positive and value input";
     }
+    
 }
